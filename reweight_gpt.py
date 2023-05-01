@@ -42,6 +42,9 @@ def weights(ins, outs):
 
 class Head():
     def __init__(self):
+        '''
+        if you want to compare this method to self-attention, uncomment the comments and remove attn = x @ self.wr
+        '''
         self.wv = weights(n_emb, n_emb//4)
         # self.wq = weights(n_emb, n_emb//4)
         # self.wk = weights(n_emb, n_emb//4)
