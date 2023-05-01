@@ -1,4 +1,4 @@
 # Reweight GPT
-Uses learnable lateral connections to reweight the inputs instead of self attention.
+Uses learnable lateral connections to reweight the inputs instead of the self attention attention mechanism.
 To learn more watch this video:
-YouTube video: comming...
+https://youtu.be/l-CjXFmcVzY
