@@ -1,8 +1,8 @@
 '''
-reweight gpt
+Reweight GPT
 Author: Hunar Ahmad @ brainxyz.com
-To Learn more: https://youtu.be/l-CjXFmcVzY
-
+This method uses learnable lateral connections to reweight the inputs instead of the self-attention mechanism.
+To learn more about the method, watch this video (from 41:26): https://youtu.be/l-CjXFmcVzY
 '''
 import numpy as np
 import matplotlib.pylab as plt
