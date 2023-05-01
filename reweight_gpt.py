@@ -1,7 +1,7 @@
 '''
 Reweight GPT
 Author: Hunar Ahmad @ brainxyz.com
-This method uses learnable lateral connections to reweight the inputs instead of the self-attention mechanism.
+This method uses learnable lateral connections to reweight the inputs instead of the self-attention mechanism (which are commented).
 To learn more about the method, watch this video (from 41:26): https://youtu.be/l-CjXFmcVzY
 '''
 import numpy as np
