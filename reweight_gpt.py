@@ -4,16 +4,13 @@ Author: Hunar Ahmad @ brainxyz.com
 To Learn more: https://youtu.be/l-CjXFmcVzY
 
 '''
-
 import numpy as np
 import matplotlib.pylab as plt
 import torch
 from torch.nn import functional as F
 
-
 with open('file.txt', 'r', encoding='utf-8') as f:
     text = f.read()
-    
 text = text.lower()
 
 chars = sorted(list(set(text)))
@@ -33,10 +30,9 @@ embed = torch.randn(vocab_size, n_emb)
 pos = torch.randn(ins, n_emb)
 embed = embed.to(device)
 pos = pos.to(device)
-
 data = torch.tensor(data).long()
-
 params = []
+
 def weights(ins, outs):
     ws = torch.randn(ins, outs)*0.1
     ws = ws.to(device)
@@ -94,6 +90,7 @@ print("params:", sum(p.numel() for p in params))
 
 import time
 t = time.time()
+
 ers = []
 for i in range(5000):
 
@@ -109,7 +106,6 @@ for i in range(5000):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
-
     e = loss.item()
     if i % 500 == 0:
         print("loss:", e)
@@ -117,18 +113,15 @@ for i in range(5000):
 
 print("time:", time.time()-t)    
 
-
 s = xs[0]
 gen_text = ""
 for i in range(3000):
     yh = model.forward(s)
     prob = F.softmax(yh[-1, :]*1, dim=0)
-    pred = torch.argmax(yh[-1, :]).item()
-    # pred = torch.multinomial(prob, num_samples=1).item()
-    
+    # pred = torch.argmax(yh[-1, :]).item()
+    pred = torch.multinomial(prob, num_samples=1).item()
     s = torch.roll(s, -1)
     s[-1] = pred
-    
     gen_text += itos[pred]
 
-print(gen_text)    
+print(gen_text)      
