@@ -9,7 +9,7 @@ import matplotlib.pylab as plt
 import torch
 from torch.nn import functional as F
 
-with open('/data/file.txt', 'r', encoding='utf-8') as f:
+with open('data/file.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 text = text.lower()
 
