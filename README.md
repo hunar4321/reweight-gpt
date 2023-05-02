@@ -1,5 +1,7 @@
 # Reweight GPT
-Uses learnable lateral connections to reweight the inputs instead of the self-attention mechanism.
+
+An alternative to the self-attetnion mechanism in Tranformer achitechture.
+It uses learnable lateral connections to reweight the inputs instead of the self-attention mechanism (as illustrated below).
 To learn more about the method, watch this video (from 41:26):
 https://youtu.be/l-CjXFmcVzY
 
