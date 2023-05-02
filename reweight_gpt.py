@@ -1,9 +1,11 @@
 '''
-Reweight GPT
-Author: Hunar Ahmad @ brainxyz.com
+Reweight GPT: An alternative to the self-attetnion mechanism in Tranformer achitechture.
+Author: Hunar Ahmad Abdulrahman @ brainxyz.com
+
 This method uses learnable lateral connections to reweight the inputs instead of the self-attention mechanism (which are commented).
 To learn more about the method, watch this video (from 41:26): https://youtu.be/l-CjXFmcVzY
 '''
+
 import numpy as np
 import matplotlib.pylab as plt
 import torch
@@ -43,7 +45,8 @@ def weights(ins, outs):
 class Head():
     def __init__(self):
         '''
-        if you want to compare this method to self-attention, uncomment the comments and remove attn = x @ self.wr
+        If you want to compare this method to self-attention, uncomment the comments and remove (x @ self.wr)
+        Note: you can also pass (x @ self.wr) through a non-linear layer for a better performance.
         '''
         self.wv = weights(n_emb, n_emb//4)
         # self.wq = weights(n_emb, n_emb//4)
