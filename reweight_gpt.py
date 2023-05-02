@@ -45,8 +45,8 @@ def weights(ins, outs):
 class Head():
     def __init__(self):
         '''
-        If you want to compare this method to self-attention, uncomment the comments and remove (x @ self.wr)
-        Note: you can also pass (x @ self.wr) through a non-linear layer for a better performance.
+        If you want to compare this method to self-attention, uncomment the comments and remove "x @ self.wr"
+        Note: you can also pass "x @ self.wr" through a non-linear layer for better performance.
         '''
         self.wv = weights(n_emb, n_emb//4)
         # self.wq = weights(n_emb, n_emb//4)
