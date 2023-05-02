@@ -1,3 +1,6 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/hunar4321/reweight-gpt)
+![GitHub](https://img.shields.io/github/license/hunar4321/reweight-gpt)
+
 # Reweight GPT
 
 An alternative to the self-attetnion mechanism in Tranformer achitechture.
