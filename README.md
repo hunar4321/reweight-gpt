@@ -9,8 +9,8 @@ To learn more about the method, watch this video (from 41:26):
 https://youtu.be/l-CjXFmcVzY
 
 # Files:
-1. neural_network_tutorials.ipynb (a step by step tutorial from basic neural-net til GPT)
-2. reweight-gpt.py (GPT multi-head & multi-block)
+1. neural_network_tutorials.ipynb (a step by step tutorial from basic neural-net to GPT)
+2. reweight-gpt.py (multi-block GPT)
 
 # Illustration:
 
