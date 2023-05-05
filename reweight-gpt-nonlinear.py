@@ -1,8 +1,7 @@
 
 '''
-Reweight-GPT:
-
-An alternative to self-attetnion. This script is adapted from Karpathy's GPT project (the self attention parts are replaced with direct reweighting mechanism)
+Reweight-GPT: 
+An alternative to self-attetnion. This script is adapted from Andrej Karpathy's GPT project (the self-attention parts are replaced with direct re-weighting mechanism)
 
 '''
 
