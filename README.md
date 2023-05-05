@@ -9,8 +9,9 @@ To learn more about the method, watch this video (from 41:26):
 https://youtu.be/l-CjXFmcVzY
 
 # Files:
-1. neural_network_tutorials.ipynb (a step by step tutorial from basic neural-net to GPT)
-2. reweight-gpt.py (multi-block GPT)
+1. neural_network_tutorials.ipynb (A step by step tutorial from the basics to GPT).
+2. reweight-gpt.py (A multi-block GPT implimentation using direct re-weighting of the attention matrix).
+3. reweight-gpt-nonlinear.py (A nonlinear version of the direct re-weighting method. For easy comparsion between the two methods, I adapted this script directly from Andrej Karpathy's GPT implimentation).
 
 # Illustration:
 
